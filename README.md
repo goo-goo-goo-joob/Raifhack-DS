@@ -1,4 +1,6 @@
-# Raifhack-DS ⚡
+# [Raifhack-DS](https://russianhackers.notion.site/Raifhack-DS-266336ee6b7640c691364a9bb49885dd) ⚡
+
+*Постановка задачи: на основании данных о продаже коммерческой недвижимости необходимо построить модель, прогнозирующую изменение цен.*
 
 ## Финальное решение 
 #### скор / место: 1.2980 / 46 public ➡ 1.1634 / 72 private
@@ -62,28 +64,28 @@
 
 ## Описание
 
-* requirements.txt - стандартный requirements для pip
+* [requirements.txt](/requirements.txt) - стандартный requirements для pip
 ```bash
 pip install -r requirements.txt 
 ```
-* additional_data - дополнительные данные с сайта Росстата
+* [additional_data](/additional_data) - дополнительные данные с сайта Росстата
+* [data](/data) - сгенерированные WOE-скоры
+* [submit](/submit) - содержит итоговый сабмит и сабмит для публичного решения
 
-* woe_features.ipynb - генератор WOE признаков. Необходимо выполнить до запуска основного ноутбука
+* [woe_features.ipynb](woe_features.ipynb) - генератор WOE-скоров. Необходимо выполнить до запуска основного ноутбука
 ```bash
 jupyter nbconvert --to notebook --execute woe_features.ipynb
 ```
 
-* final_solution.ipynb - итоговый ноутбук с обучением основной модели и получением предсказания
+* [final_solution.ipynb](final_solution.ipynb) - итоговый ноутбук с обучением основной модели и получением предсказания
 ```bash
 jupyter nbconvert --to notebook --execute final_solution.ipynb
 ```
-* final_submision.csv - итоговый сабмит
 
-* public_solution.ipynb - ноутбук с публичным решением
+* [public_solution.ipynb](public_solution.ipynb) - ноутбук с публичным решением
 ```bash
 jupyter nbconvert --to notebook --execute public_solution.ipynb
 ```
-* public_submision.csv - сабмит для публичного решения
 
 # License
 © [Aleksey Podchezertsev](https://github.com/AsciiShell),
